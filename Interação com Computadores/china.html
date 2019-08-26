@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pratos Chineses</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
+    <script src="javascript_menu.js"></script>
+</head>
+
+<body>
+    <div id="conteudo">
+        
+        <div id="barraInicial">
+            <ul class="w3-navbar w3-black">
+                <li class="w3-xlarge"><a id="but_home" href="hp.html"><i class="fa fa-home"></i></a></li>
+                <li class="w3-xlarge"><a id="but_back" onclick="history.go(-1)"><i class="fa fa-arrow-left"></i></a></li>
+                <img src="logo-mini.png" alt="logotipo" id="logo-mini">
+                <li><a onclick="localStorage.removeItem('sessao');location.reload();" class="w3-padding-16 w3-center w3-large" id="siga_enc"><i class="fa fa-sign-out" aria-hidden="true"></i><p id="siga_txt"></p></a></li>
+                <li class="w3-right"><a id="but_top" class="w3-padding-16" href="#"><i class="fa fa-question w3-large"></i></a></li>
+                <li class="w3-right"><a id="but_top2" class="w3-padding-16" href="roda.html"><i class="fa fa-gamepad w3-large"></i></a></li>
+            </ul>
+        </div>
+        
+        <div id="texto">
+            
+            <div id="ajuda" class="modal">
+                <div class="modal-content">
+                    <span class="close">x</span>
+                    <br>
+                    <p>Esta é a página dos<strong>pratos chineses</strong>.</p>
+                    <br>
+                    <p>Para <strong>adicionar</strong> um dos pratos à <strong>lista</strong>, basta clicar no <strong>botão +</strong> e para <strong>remover</strong> no <strong>botão -</strong>.</p>
+                    <br>
+                    <p>Para proceder ao método de <strong>pagamento/entrega</strong>, basta clicar no <strong>botão "Continuar encomenda"</strong>.</p>
+                    <br>
+                    <p>Pode também de livre vontade voltar<strong> para trás</strong>, clicando no <strong>botão da seta para a esquerda</strong> ou voltar para a <strong>página inicial</strong> clicando no <strong>botão da "casa"</strong>.</p>
+                    <br>
+                </div>
+            </div>
+            
+            <div id="cancel" class="modal">
+                <div class="modal-content2">
+                    <p>Tem certeza que deseja cancelar o seu pedido?</p>
+                    <br>
+                    <a id="sim" onclick="sessionStorage.clear(); location.reload();">Sim</a>
+                    
+                    <a id="nao" class="close2">Não</a>
+                </div>
+            </div>
+            
+            <p class="primeiro_tit">Pratos Chineses</p>
+            <div id="sidebar">
+                    <p id="seu_pedido">O seu pedido:</p>
+                <div id="scroll">
+                    <p id="burguer"></p>
+                    <p id="pizza"></p>
+                    <p id="mburguer"></p>
+                    <p id="paramegiana"></p>
+                    <p id="bife"></p>
+                    <p id="lasanha"></p>
+                    <p id="crepes"></p>
+                    <p id="waffle"></p>
+                    <p id="vinho"></p>
+                    <p id="coca"></p>
+                    <p id="agua"></p>
+                    <p id="sumo"></p>
+                    <p id="cozido"></p>
+                    <p id="france"></p>
+                    <p id="bir"></p>
+                    <p id="caril"></p>
+                    <p id="bolonhesa"></p>
+                    <p id="risotto"></p>
+                    <p id="quinoa"></p>
+                    <p id="beringela"></p>
+                    <p id="hamburguer"></p>
+                    <p id="msalmao"></p>
+                    <p id="salada_f"></p>
+                    <p id="chop"></p>
+                    <p id="chun"></p>
+                    <p id="yak"></p>
+                    <p id="sushi"></p>
+                    <p id="bacalhau"></p>
+                    <p id="salmao"></p>
+                    <p id="sopa"></p>
+                    <p id="peito"></p>
+                    <p id="mbife"></p>
+                    <p id="mbolonhesa"></p>
+                    <p id="msushi"></p>
+                    <p id="mcaril"></p>
+                    <p id="mchop"></p>
+                </div>
+                <a id="eliminar" onclick="cancel()">Eliminar pedidos</a>
+                <p id="total"></p>
+            </div>
+            
+            <img class="flags" alt="bandeira da china" src="china2.png">
+            
+            <ul class="lista2">
+                <li class="add">Adicionar à lista</li>
+                <li id="menos_l">Remover da lista</li>
+            </ul>
+            
+            <div class="primeiro">
+                <img class="noodles" alt="Chop suey de gambas" src="chop.png">
+                <ul class="descricao">
+                        <li>Chop suey de gambas</li>
+                        <br>
+                        <li>Preço: 7€</li>
+                </ul>
+                
+                <ul class="addRem">
+                    <li class="botaoM"> <a class="w3-btn-floating-large" id="mais3" onclick="addText('Chop suey de gambas')">+</a> </li>
+                    <li> <a class="w3-btn-floating-large" id="menos3" onclick="removeText('Chop suey de gambas')">-</a> </li>
+                </ul>
+            </div>
+            <div class="segundo">
+                    <img class="noodles2" alt="Rolos de Chun Juan" src="chuan.png">
+                    <ul class="descricao2">
+                    <li>12 Rolos Chun Juan</li>
+                    <br>
+                    <li>Preço: 6€</li>
+                    </ul>
+
+                    <ul class="addRem">
+                        <li class="botaoM"> <a class="w3-btn-floating-large" id="mais2" onclick="addText('12 Rolos Chun Juan')">+</a> </li>
+                        <li> <a class="w3-btn-floating-large" id="menos2" onclick="removeText('12 Rolos Chun Juan')">-</a> </li>
+                        <p id="menos" hidden="true"></p>
+                    </ul>
+            </div>
+            <a id="direcionar3" href="bebidas.html">Bebidas</a>
+            <a id="direcionar2" href="menus.html">Menus</a>
+            <a id="direcionar1" href="sobremesas.html">Sobremesas</a>
+            <a id="finalizar" onclick="save_request()" href="metodo_entrega.html">Continuar encomenda</a>
+        </div>
+        
+        <div id="barraPerfil">
+            <ul class="w3-navbar w3-black">
+                <li id="proximos"><a class="w3-padding-16 w3-center w3-large" href="restaurantesProximos.html"><i class="fa fa-map-marker"></i>Restaurantes Próximos</a></li>
+                <li id="promocoes"><a class="w3-padding-16 w3-center w3-large" href="promocoes.html"><i class="fa fa-percent"></i>Promoções</a></li>
+                <li id="sugestoes"><a class="w3-padding-16 w3-center w3-large" href="sugestoes.html"><i class="fa fa-list-alt"></i>Sugestões</a></li>
+                <li id="eu"><a class="w3-padding-16 w3-center w3-large" href="eu.html"><i class="fa fa-user"></i>Eu</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Página de Registo</title>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="estilo.css">
+        <script src="registar.js"></script>
+        <script src="utilizador.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+        <script type='text/javascript' src="efeitos.js"></script>
+    </head>
+
+    <body onload="document.registration.userid.focus();"> 
+        
+        <header>
+            
+            <div class="sessao">
+                <p id="Jogador_Actual"></p>
+                <button class="terminar_sessao" name="terminar_sessao" id="terminar_sessao" type="button" onclick="terminar_sessao();">Terminar Sessão</button>
+            </div>
+            
+            <div><img id="logo" src="logotipo.png" alt="logotipo"></div>
+
+            <div class="initial-tabs">
+                <nav>
+                    <a href="PaginaInicial.html">Página Inicial</a>
+                    <a class="selecionada" href="PaginaRegisto.html">Registar</a>
+                    <a href="ComoJogar.html">Como jogar</a>
+                    <a href="jogar.html">Jogar</a>
+                    <a href="estatisticas.html">Pontuações</a>
+                    <a href="creditos.html">Créditos</a>
+                </nav>
+            </div>
+        </header>
+         
+             <div class="sessao">
+                <p id="Jogador_Actual"></p>
+                <button class="terminar_sessao" name="terminar_sessao" id="terminar_sessao" type="button" onclick="terminar_sessao();" hidden="true">Terminar Sessão</button>
+            </div>
+          
+        <form class="registo" name='registration' onSubmit="registo();">
+            <ul>
+
+                <li>
+                    <label for="userid">Nome de Utilizador:</label>
+                </li>
+                    <li>
+                        <input type="text" name="userid" minlength= "5" maxlength="8" required />
+                    </li>
+
+                <li>
+                    <label for="passid">Password:</label>
+                </li>
+                    <li>
+                        <input type="password" name="passid" minlength="5" maxlength="8" required/>
+                    </li>
+
+                <li>
+                    <label for="email">E-mail:</label>
+                </li>
+                    <li>
+                        <input type="email" name="email" required/>
+                    </li>
+
+                <li>
+                    <label id="gender">Género:</label>
+                </li>
+                    <select name = "genero">
+                        <option value="masc">Masculino</option>
+                        <option value="femi" selected>Feminino</option>
+                    </select>
+
+                <li>
+                    <input type="submit" name="submit" value="Registar" />
+                </li>
+
+            </ul>
+        </form>
+        
+    </body>
+
+</html>

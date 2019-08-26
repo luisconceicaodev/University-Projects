@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Página Inicial</title>
+        <link type="text/css" rel="stylesheet" href="estilo.css">
+        <script src="login.js"></script>
+        <script src="utilizador.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+        <script type='text/javascript' src="efeitos.js"></script>
+    </head>
+
+    <body>
+        <header>
+            
+            <div class="sessao">
+                <p id="Jogador_Actual"></p>
+                <button class="terminar_sessao" name="terminar_sessao" id="terminar_sessao" type="button" onclick="terminar_sessao();">Terminar Sessão</button>
+            </div>
+            
+            <div><img id="logo" src="logotipo.png" alt="logotipo"></div>
+
+            <div class="initial-tabs">
+                <nav>
+                    <a class="selecionada" href="PaginaInicial.html">Página Inicial</a>
+                    <a href="PaginaRegisto.html">Registar</a>
+                    <a href="ComoJogar.html">Como jogar</a>
+                    <a href="jogar.html">Jogar</a>
+                    <a href="estatisticas.html">Pontuações</a>
+                    <a href="creditos.html">Créditos</a>
+                </nav>
+            </div>
+            
+        </header>
+            
+        <div id="login-box">
+            <div id="login-box-intern">
+                <div id="login-box-label">Login</div>
+
+                <div class="input-div">
+                    <input id="utilizador" type="text" placeholder="Nome de utilizador" name="nome"/>
+                </div>
+
+                <div class="input-div">
+                    <input id="password" type="password" placeholder="Password" name="password"/>
+                </div>
+
+                <div id="botoes">
+                    <input type="button" value="Login" class="botao_login" name= "entrar" onclick="validate();"/>
+                    <input type="button" value="Registar" class="botao_login" name="registar" onclick="window.location='PaginaRegisto.html'"/>
+                </div>
+            </div>
+        </div>
+        
+        <footer>Copyright © 2016 - Todos os direitos reservados ao grupo nº008 de ITW</footer>
+        
+    </body>
+
+</html>
