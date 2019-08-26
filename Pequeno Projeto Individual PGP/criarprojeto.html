@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Criar Projeto</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">-->
+        <script type='text/javascript' src="Javascript.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div>
+                <p class="titulo">Criar Projeto</p>
+            </div>
+            <a href="index.html" class="nav">Página Inicial</a>
+        </header>
+        
+        <div id="form">
+            <form id="novoProjeto" name="novoProjeto" onSubmit="addproject();" action="projeto.html">
+                <label for="nome"><p>Nome do projeto:</p></label>
+                <input type="text" name="nome" maxlength="30" required>
+                <label for="email"><p>Email:</p></label>
+                <input type="email" name="email" maxlength="30" required>
+                <label for="tarefa1"><p>Tarefa 1:</p></label>
+                <input type="text" name="tarefa1" required>
+                <span id="new_tar_label"></span><br>
+                <input type="button" onclick="addTarefa()" value="Adicionar tarefa" id="addtar"><br>
+                <input type="submit" name="submit">
+            </form>
+        </div>
+    </body>
+    
+</html>

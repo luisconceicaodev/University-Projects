@@ -1,0 +1,18 @@
+Recomendações:
+Os testes foram realizados com o browser Google Chrome, portanto é sugerido o uso
+deste mesmo.
+
+Instruções do uso:
+1º Abrir o ficheiro HTML index.html
+2º Clique no link "Criar novo projeto"
+3º Preencha o formulário com as tarefas desejadas e submeta
+4º Para começar uma tarefa clique em "Começar tarefa X" 
+5º Insira o nº do seu cartão (está pré-definido para o nº48303 de modo a poupar tempo)
+6º Para terminar uma tarefa clique em "Terminar tarefa X"
+7º Consulte quem realizou as tarefas e quando as realizou na area "Tempo gasto nas tarefas do projeto:"
+8º Consulte o tempo total gasto no projeto na area "Tempo gasto no projeto:"
+
+Se quiser sair e voltar ao seu projeto mais tarde:
+1º Abrir o ficheiro HTML index.html
+2º Clique no link "Ver progresso de projetos préviamente criados"
+3º Selecione o projeto que deseja visualizar
