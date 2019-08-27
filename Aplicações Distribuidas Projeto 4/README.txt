@@ -1,4 +1,6 @@
-﻿Aplicações Distribuídas : Projeto 4
+﻿GITHUB NOTE: Project is in one of the zips outside of this directory
+
+Aplicações Distribuídas : Projeto 4
 Grupo 6
 Nº 48303, 49050
 
