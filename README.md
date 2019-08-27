@@ -27,9 +27,9 @@ Java related projects:
  
 Python related projects:
  - Programação I
-    - Electric Tuk-Tuk and drivers management
+    - Management of electric Tuk-Tuks and drivers
  - Programação II
-    - With a CSV, exported the official Baltimore website, creates 4 graph plots that showcase the statistics of the crime in the city
+    - With a CSV, exported from the official Baltimore website, creates 4 graph plots that showcase the statistics of the crime in the city
  - Sistemas Operativos
     - Project I: Files, Signals, Time and Alarms
     - Project II: Processes, Threads and Communication)
